@@ -1,0 +1,17 @@
+1. Explica dos diferencias entre una API REST y un servidor GraphQL. (2 pts)
+Respuesta: la API REST usa endpoints separados para cada conculta, mientras que con GraphQL es un unico endpoint desde el cual se pueden realizar las consultas, otra diferencia entre estas es que API REST tiene persistencia, manteniendo los datos incluso después de desconectar, en cambio GraphQL existe en memoria, por lo que al desconectar se pierden los datos.
+
+2. Indica una situación en la que conviene usar REST y otra en la que conviene usar GraphQL. (2 pts)
+Respuesta: Una API REST es mas util para un proyecto sencillo como una base de datos para una tienda en la que no se requiere tanta informacion con dependencias, de tal forma que sea mas facil de buscar, por el otro lado GraphQL te permite buscar datos anidados, por ejemplo un curso que requiere datos que esten conectados a otros.
+
+3. ¿Qué diferencia hay entre una imagen y un contenedor? ¿Qué papel cumple el Dockerfile en esa relación?
+(2 pts)
+Respuesta: Ambas van de la mano, ya que la imagen contiene todo lo necesario para crear el entorno, el cual se encuentra dentro del contenedor quien mantiene la instancia ejecutandose. El dockerfile es la base de esta relacion, ya que meidante este se puede crear la imagen, por lo que el Docker construye la imagen que crea el contenedor donde se ejecuta.
+
+4. ¿Para qué sirve Docker Compose? En el mapeo 8000:8000, ¿qué representa el primer 8000 y qué
+representa el segundo? (2 pts)
+Respuesta: El docker compose sirve para definir y ejecutar diferentes servicios que sean necesarios sin que se tenga que hacer uno por uno. Respecto a los mapeos, el rpimer 8000 correspone al de nuestro equipo y el segundo al del contenedor de tal forma que se puedan conectar.
+
+5. ¿Por qué las laptops del ejercicio 1 se guardan en MySQL y no en una lista de Python? ¿Qué identifica
+la llave primaria id? (2 pts)
+Respuesta: Porque la lista de Python solo crearia un registro temporal y con MySQL se almacena en una base de datos a modo de tabla. La llave primaria Id registra cada elemento con un identificador unico.

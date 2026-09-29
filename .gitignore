@@ -1,0 +1,25 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Variables de entorno
+.env
+.env.*
+
+# Docker
+mysql_data/
+data/
+
+# IDE
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db
